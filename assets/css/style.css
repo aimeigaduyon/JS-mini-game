@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Squada+One&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(222, 233, 238);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+/* game intro */
+.mini-game { 
+    width: 800px;
+    height: 580px;
+    background: linear-gradient(to bottom, #1e2cf0, #49adff);
+    margin: 30px auto;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.game-intro {
+    transition: opacity 0.5s ease;
+}
+
+.game-title {
+    height: 100px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+}
+
+#playerName {
+    height: 200px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+#playerInput {
+    width: 300px;
+    height: 20px;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+#playerInput:hover {
+    transform: scale(1.1);
+}
+
+#startBtn {
+    margin-top: 30px;
+    width: 200px;
+    height: 50px; 
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #1e2cf0;
+    color: aliceblue;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+#startBtn:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+
+/* game start */
+.game-start {
+    transition: opacity 0.5s ease 0.5;
+}
+
+.game-scores {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.player-score, .computer-score {
+    text-align: center;
+    color: aliceblue;
+    margin: 0 180px;
+}
+
+.game-result {
+    color: aliceblue;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+}
+
+.game-hands {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.game-hands img {
+    width: 150px;
+    margin: 0 100px;
+}
+
+.game-options {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.game-options button {
+    width: 100px;
+    height: 40px;
+    border: 0;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #1e2cf0;
+    color: aliceblue;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    margin: 0 15px;
+}
+
+.game-options button:hover {
+    transform: scale(1.1);
+}
+
+.match-history {
+    width: 600px;
+    height: 100px;
+    background-color: rgba(240, 248, 255, 0.644);
+    position: absolute;
+    top: 81%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-evenly;
+    overflow: auto;
+}
+
+.player-history, .computer-history {
+    font-size: 15px;
+    list-style-type: none;
+}
+
+.player-history li, .computer-history li {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.player-history img,
+.computer-history img {
+    width: 100px;
+}
+
+div.fadeOut {
+    opacity: 0;
+    transition-duration: 0.5s;
+    pointer-events: none;
+}
+
+div.fadeIn {
+    opacity: 1;
+    transition-duration: 1s;
+    pointer-events: all;
+}

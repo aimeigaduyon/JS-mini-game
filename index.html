@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Rock, Paper, and Scissors</title>
+</head>
+<body>
+
+    <section class="mini-game">
+
+        <div class="game-intro">
+            <h1 class="game-title">Rock -  Paper - Scissors</h1>
+            <form id="playerName" action="#" method="">
+                <input type="text" name="player" id="playerInput" placeholder="Enter your name">
+                
+            </form>
+            <button id="startBtn">Start Game</button>
+        </div>
+        
+        <div class="game-start fadeOut">
+            <div class="game-scores">
+                <div class="player-score">
+                    <h2 id="nameInput"></h2>
+                    <p>0</p>
+                </div> 
+                <div class="computer-score">
+                    <h2>Computer</h2>
+                    <p>0</p>
+                </div>
+            </div>
+
+            <h2 class="game-result">Choose an option</h2>
+
+            <div class="game-hands">
+                <img class="player-hand" src="assets/images/left-rock.png" alt="">
+                <img class="computer-hand" src="assets/images/right-rock.png" alt="">
+            </div>
+
+            <div class="game-options">
+                <button class="rock">rock</button>
+                <button class="paper">paper</button>
+                <button class="scissors">scissors</button>
+            </div>
+
+            <div class="match-history">
+                <ul class="player-history"></ul>
+                <ul class="computer-history"></ul>
+            </div>
+
+        </div>
+        
+    </section>
+
+    <script src="assets/script/script.js"></script>
+</body>
+</html>

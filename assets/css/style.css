@@ -12,7 +12,7 @@ body {
 /* game intro */
 .mini-game { 
     width: 800px;
-    height: 580px;
+    height: 600px;
     background: linear-gradient(to bottom, #1e2cf0, #49adff);
     margin: 30px auto;
     border-radius: 10px; 
